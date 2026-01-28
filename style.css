@@ -1,0 +1,12 @@
+.one {
+  outline: 2px solid black;
+  height: 16px;
+  width: 16px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 256px;
+  width: 256px;
+}
