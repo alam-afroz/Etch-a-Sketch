@@ -1,5 +1,5 @@
 .box {
-  outline: 2px solid black;
+  outline: 1px solid black;
 }
 .container {
   display: flex;
