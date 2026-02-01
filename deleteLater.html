@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <body>
+    <h2>JavaScript Prompt</h2>
+
+    <button onclick="getUserName()">Click me</button>
+
+    <p id="greeting"></p>
+
+    <script>
+      function getUserName() {
+        let name = prompt("Please enter your name:", "Harry Potter");
+        let greetingText;
+
+        if (name == null || name == "") {
+          greetingText = "User cancelled the prompt or entered an empty name.";
+        } else {
+          greetingText = "Hello, " + name + "! Welcome.";
+        }
+
+        document.getElementById("greeting").innerHTML = greetingText;
+      }
+    </script>
+  </body>
+</html>
