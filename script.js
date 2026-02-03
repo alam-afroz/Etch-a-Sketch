@@ -16,8 +16,14 @@ function grid(size) {
       box.style.width = 512 / size + "px";
       box.style.height = 512 / size + "px";
       container.appendChild(box);
+      let rang = ["red", "blue", "green", "yellow", "orange", "black"];
+      let count = 0;
       box.addEventListener("mouseenter", () => {
-        box.style.backgroundColor = "black";
+        // box.style.backgroundColor = "black";
+        let rangType = count % rang.length;
+        box.style.backgroundColor = rang[rangType];
+        console.log(rang, count, rangType);
+        count++;
       });
     }
   }
